@@ -1,3 +1,3 @@
 variable "alarms_email" {
-  default = "laprashant@gmail.com"
+  default = "test@gmail.com"
 }
