@@ -26,7 +26,7 @@ AWS_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
 # Executing terraform commands init, plan and apply
 
 function terraform_release {
-  cd 100daysofAWS
+  cd Day1-CloudWatch-Events
   echo "=========================="
   echo "Executing Terraform Init"
   echo "=========================="
