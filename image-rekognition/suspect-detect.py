@@ -13,13 +13,13 @@ def lambda_handler(event, context):
         response = rekognition.compare_faces(
             SourceImage={
                 'S3Object': {
-                    'Bucket': 'suspect-detection-bucket',
+                    'Bucket': '<bucket name>',
                     'Name': suspect + '.jpg'
                 }
             },
             TargetImage={
                 'S3Object': {
-                    'Bucket': 'suspect-detection-bucket',
+                    'Bucket': '<bucket name>',
                     'Name': 'detected-security-camera-image.jpg'
                 }
             }
